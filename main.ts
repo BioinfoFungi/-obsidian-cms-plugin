@@ -54,8 +54,8 @@ export default class MyPlugin extends Plugin {
 					evt.preventDefault(); // Prevent default paste behaviour
 				
 					for (let file of files) {
-						const randomString = (Math.random() * 10086).toString(36).substr(0, 8)
-						const pastePlaceText = `![uploading...](${randomString})\n`
+						// const randomString = (Math.random() * 10086).toString(36).substr(0, 8)
+						const pastePlaceText = `![uploading...]()\n`
 						editor.replaceSelection(pastePlaceText) // Generate random string to show on editor screen while API call completes
 						// console.log(pastePlaceText)
 						// // Cloudinary request format
